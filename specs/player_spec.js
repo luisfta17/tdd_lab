@@ -27,4 +27,11 @@ describe('Player', function() {
     assert.strictEqual(actualValue, 1);
   })
 
+  it('should return highest value', function(){
+    player.addCard(card);
+
+    const actualValue = player.showBiggestValue();
+    assert.strictEqual(actualValue, 9);
+  })
+
 });

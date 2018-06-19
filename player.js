@@ -10,15 +10,14 @@ Player.prototype.addCard = function (card) {
 
 Player.prototype.showBiggestValue = function () {
   const card = this.hand[0];
-  let value = 0
+  let value = 0;
   if (card.intelligence > value) {
     value = card.intelligence;
   }
-  else if (card.strength > value) {
+  if (card.strength > value) {
     value = card.strength;
   }
-
-  else if (card.agility > value) {
+  if (card.agility > value) {
     value = card.agility;
   }
   return value;
