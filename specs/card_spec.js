@@ -12,8 +12,7 @@ describe('Card', function() {
     assert.strictEqual(actualValue, "Superman");
 
   });
-
-
+  
   it('should have intelligence', function() {
     const actualValue = card.intelligence;
     assert.strictEqual(actualValue, 6);
